@@ -1,3 +1,6 @@
 [submodule "solarized/xresources"]
 	path = solarized/xresources
 	url = https://github.com/solarized/xresources.git
+[submodule "vimrc/vimrc"]
+	path = vimrc/vimrc
+	url = https://github.com/amix/vimrc.git
