@@ -21,9 +21,9 @@ set $menu dmenu_run
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output DP-3 pos 0 0 res 2560x1440
-output HDMI-A-1 pos 2560 0 res 2560x1440
-output eDP-1 pos 5120 0 res 2560x1440
+output DP-3 pos 0 0 
+output HDMI-A-1 pos 2560 0 
+output eDP-1 pos 5120 0 
 
 output * bg /usr/share/backgrounds/f30/default/normalish/f30.png fill
 
@@ -208,4 +208,9 @@ for_window [instance="^.*"] border none
 gaps inner 10
 gaps outer 0
 
-include /etc/sway/config.d/*
+# Fix weird pink bug
+exec xrdb /home/cameron/.Xdefaults
+
+exec setxkbmap -option caps:none
+
+# include /etc/sway/config.d/*
