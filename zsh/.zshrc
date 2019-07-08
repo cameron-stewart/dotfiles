@@ -100,3 +100,10 @@ source $ZSH/oh-my-zsh.sh
 
 alias epimount="sshfs cstewa63@statepilsna18:/home/ /home/cameron/silvertsunami/statepi"
 alias python="python3"
+alias R="R --quiet"
+alias vim='vimx'
+alias vi='vimx'
+alias mkdir='mkdir -m 775'
+alias rr='rm -r'
+
+export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
