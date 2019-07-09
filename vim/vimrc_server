@@ -1,0 +1,47 @@
+syntax enable           "enable syntax highlighting
+
+let mapleader = ","     "set <leader> as comma
+
+" Spaces and Tabs
+set tabstop=4           "number of visual spaces per tab
+set softtabstop=4       "number of spaces in a tab when editing
+set expandtab           "add spaces with tab
+
+" ui config
+set mouse=a             "use mouse for navigation
+set number              "line numbers
+set showcmd             "show command in bottom bar
+"set cursorline          "higlight current line
+filetype indent on      "load filetype-specific indent files
+set wildmenu            "visual autocomplete for command menu
+set lazyredraw          "redraw only when necessary
+set showmatch           "highlight matching paren
+
+" searching
+set incsearch           "search as characters are entered
+set hlsearch            "highlight matches
+
+"turn off search highlight
+nnoremap <leader><space> :nohlsearch<CR>
+
+"folding
+set foldenable          "enable folding
+set foldlevelstart=10   "open most folds by default
+set foldnestmax=10      "10 nested fold max
+nnoremap <space> za     "space opens/closes a fold
+set foldmethod=indent   "fold based on indent level
+
+"movement
+
+"move vertically by visual line
+nnoremap j gj
+nnoremap k gk
+
+"move to beginning/end of line
+nnoremap B ^
+nnoremap E $
+nnoremap $ <nop>
+nnoremap ^ <nop>
+
+" use system clipboard
+set clipboard=unnamedplus
