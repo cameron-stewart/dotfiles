@@ -103,7 +103,9 @@ alias python="python3"
 alias R="R --quiet"
 alias vim='vimx'
 alias vi='vimx'
-alias mkdir='mkdir -m 775'
+alias mkdir='mkdir -m 775 -pv'
 alias rr='rm -r'
+alias dnf="sudo dnf"
+alias ..="cd .."
 
 export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
