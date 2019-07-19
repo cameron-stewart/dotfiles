@@ -211,7 +211,10 @@ gaps outer 0
 # Fix weird pink bug
 exec xrdb /home/cameron/.Xdefaults
 
+# Fix weird caps lock and num lock behavior
 exec setxkbmap -option caps:none
-bindsym $mod+Shift+x swaylock
+exec setxkbmap -option num:none
+
+bindsym $mod+Shift+x exec swaylock -c 000000
 
 # include /etc/sway/config.d/*

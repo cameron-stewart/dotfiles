@@ -8,7 +8,8 @@ export ZSH="/home/cameron/.oh-my-zsh"
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="mh"
+#ZSH_THEME="mh"
+ZSH_THEME='powerlevel10k/powerlevel10k'
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -98,7 +99,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias epimount="sshfs cstewa63@statepilsna18:/home/ /home/cameron/silvertsunami/statepi"
+alias epimount="sshfs cstewa63@statepilsna18:/home/ /home/cameron/silvertsunami/statepilsna18"
+alias epissh="ssh -X cstewa63@statepilsna18"
 alias python="python3"
 alias R="R --quiet"
 alias vim='vimx'
@@ -107,5 +109,14 @@ alias mkdir='mkdir -m 775 -pv'
 alias rr='rm -r'
 alias dnf="sudo dnf"
 alias ..="cd .."
+alias spotify="flatpak run com.spotify.Client"
 
+# Bash-like time format
 export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
+
+# Turn off history sharing
+unsetopt share_history
+
+# Add path for jupyter notebook
+export PATH=$PATH:~/.local/bin
+source ~/.purepower
