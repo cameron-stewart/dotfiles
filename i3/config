@@ -173,6 +173,7 @@ bar {
 bindsym $mod+x exec firefox
 
 # Set up monitors
+exec --no-startup-id xrandr --output DP-2-1 --crtc 1
 exec --no-startup-id xrandr --output DP-2-1 --mode 2560x1440 --pos 0x0 --rotate normal --output DP-2-2 --off --output DP-2-3 --off --output eDP-1 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output HDMI-2 --off --output HDMI-1 --mode 2560x1440 --pos 2560x0 --rotate normal --output DP-2 --off --output DP-1 --off
 
 # Fix weird pink bug
@@ -191,4 +192,4 @@ bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightne
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -5% #decrease sound volume
 bindsym XF86AudioMute exec pactl set-sink-mute 1 toggle # mute sound
-
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 2 toggle # mute mic

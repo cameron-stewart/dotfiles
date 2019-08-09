@@ -111,6 +111,7 @@ alias rr='rm -r'
 alias dnf="sudo dnf"
 alias ..="cd .."
 alias rscript="Rscript"
+alias fm="xrandr --output DP2-1 --crtc 1"
 
 # Bash-like time format
 export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
