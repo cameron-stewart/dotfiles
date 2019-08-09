@@ -110,7 +110,7 @@ alias mkdir='mkdir -m 775 -pv'
 alias rr='rm -r'
 alias dnf="sudo dnf"
 alias ..="cd .."
-alias spotify="flatpak run com.spotify.Client"
+alias rscript="Rscript"
 
 # Bash-like time format
 export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
