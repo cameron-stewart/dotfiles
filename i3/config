@@ -184,6 +184,9 @@ gaps inner 10
 gaps outer 0
 smart_gaps on
 
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+
 # Pulse Audio controls
 bindsym XF86AudioRaiseVolume exec pactl set-sink-volume 1 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -5% #decrease sound volume
