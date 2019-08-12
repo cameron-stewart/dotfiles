@@ -173,8 +173,8 @@ bar {
 bindsym $mod+x exec firefox
 
 # Set up monitors
-exec --no-startup-id xrandr --output DP-2-1 --crtc 1
-exec --no-startup-id xrandr --output DP-2-1 --mode 2560x1440 --pos 0x0 --rotate normal --output DP-2-2 --off --output DP-2-3 --off --output eDP-1 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output HDMI-2 --off --output HDMI-1 --mode 2560x1440 --pos 2560x0 --rotate normal --output DP-2 --off --output DP-1 --off
+exec --no-startup-id xrandr --output DP2-1 --crtc 1
+exec --no-startup-id xrandr --output DP2-1 --mode 2560x1440 --pos 0x0 --rotate normal --output DP2-2 --off --output DP2-3 --off --output eDP-1 --primary --mode 2560x1440 --pos 0x0 --rotate normal --output HDMI-2 --off --output HDMI-1 --mode 2560x1440 --pos 2560x0 --rotate normal --output DP-2 --off --output DP-1 --off
 
 # Fix weird pink bug
 exec --no-startup-id xrdb ~/.Xdefaults
