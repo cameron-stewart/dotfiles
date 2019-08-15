@@ -112,6 +112,9 @@ alias dnf="sudo dnf"
 alias ..="cd .."
 alias rscript="Rscript"
 alias fm="xrandr --output DP2-1 --crtc 1"
+alias pip-check="pip-check --cmd=pip3"
+alias prp="pipenv run python"
+
 
 # Bash-like time format
 export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
