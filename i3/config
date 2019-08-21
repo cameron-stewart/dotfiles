@@ -194,10 +194,6 @@ bindsym XF86AudioLowerVolume exec pactl set-sink-volume 1 -5% #decrease sound vo
 bindsym XF86AudioMute exec pactl set-sink-mute 1 toggle # mute sound
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 2 toggle # mute mic
 
-# Alternate bindings for work keyboard
-bindsym $mod+equal exec pactl set-sink-volume 1 +5% #increase sound volume
-bindsym $mod+minus exec pactl set-sink-volume 1 -5% #decrease sound volume
-
 # Screencapture
 bindsym Print exec scrot ~/screenshots/%Y-%m-%d-%T-screenshot.png
 bindsym --release Control+Print exec scrot -s ~/screenshots/%Y-%m-%d-%T-screenshot.png
