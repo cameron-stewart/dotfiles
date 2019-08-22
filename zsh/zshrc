@@ -113,7 +113,8 @@ alias ..="cd .."
 alias rscript="Rscript"
 alias fm="xrandr --output DP2-1 --crtc 1"
 alias pip-check="pip-check --cmd=pip3"
-alias prp="pipenv run python"
+alias prp="python3.6 -m pipenv run python3.6"
+alias pipenv="python3.6 -m pipenv"
 
 
 # Bash-like time format
