@@ -105,5 +105,7 @@ alias R="R --quiet"
 alias mkdir='mkdir -m 775 -pv'
 alias rr='rm -r'
 alias ..="cd .."
+alias prp="python3.6 -m pipenv run python3.6"
+alias pipenv="python3.6 -m pipenv"
 
 export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'
