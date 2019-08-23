@@ -100,7 +100,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias epimount="sshfs cstewa63@statepilsna18:/home/ /home/cameron/silvertsunami/statepilsna18"
+alias epimount="sshfs cstewa63@statepilsna18:/home/ /home/cameron/statepilsna18"
 alias epissh="ssh -X cstewa63@statepilsna18"
 alias python="python3"
 alias R="R --quiet"
@@ -113,9 +113,7 @@ alias ..="cd .."
 alias rscript="Rscript"
 alias fm="xrandr --output DP2-1 --crtc 1"
 alias pip-check="pip-check --cmd=pip3"
-alias prp="python3.6 -m pipenv run python3.6"
-alias pipenv="python3.6 -m pipenv"
-
+alias prp="pipenv run python"
 
 # Bash-like time format
 export TIMEFMT=$'\nreal\t%*E\nuser\t%*U\nsys\t%*S'

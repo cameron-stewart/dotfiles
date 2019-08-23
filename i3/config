@@ -190,3 +190,6 @@ bindsym --release Control+Print exec scrot -s ~/screenshots/%Y-%m-%d-%T-screensh
 
 # Start polybar
 exec_always --no-startup-id /home/cameron/.config/polybar/launch_polybar.sh
+
+# Set wallpaper
+exec_always --no-startup-id feh --bg-scale --no-xinerama ~/wallpapers/nebula.jpg
